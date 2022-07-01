@@ -4,7 +4,7 @@ public class Clicker : MonoBehaviour
 {
     Camera mainCam;
 
-    [SerializeField] IntObject currency;
+    [SerializeField] IntObject copperCurrency;
     [SerializeField] LayerMask clickerLayer;
 
     // cache components
@@ -29,7 +29,7 @@ public class Clicker : MonoBehaviour
 
             if (hit != null)
             {
-                currency.value++;
+                copperCurrency.value++;
             }
         }
     }
