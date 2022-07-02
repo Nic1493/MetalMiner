@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: User Data
   m_EditorClassIdentifier: 
   currencies:
-    keys: 0000000001000000020000000300000004000000
-    values: 0000000000000000000000000000000000000000
+    keys: 
+    values: 
