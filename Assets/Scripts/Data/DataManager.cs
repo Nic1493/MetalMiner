@@ -3,23 +3,34 @@ using UnityEngine;
 public class DataManager : MonoBehaviour
 {
     [SerializeField] UserData userData;
-    [SerializeField] IntObject[] currencyObjects;
+    [SerializeField] CurrencyObject[] currencyObjects;
 
     void LoadData()
     {
         userData.Load();
 
+        // make sure dictionary is initialized
+        if (userData.currencies.Count == 0)
+        {
+            for (int i = 0; i < currencyObjects.Length; i++)
+            {
+                userData.currencies.Add(currencyObjects[i].currencyType, 0);
+            }
+        }
+
         for (int i = 0; i < currencyObjects.Length; i++)
         {
-            currencyObjects[i].value = userData.currencies[i];
+            CurrencyType type = currencyObjects[i].currencyType;
+            currencyObjects[i].amount = userData.currencies[type];
         }
     }
 
     void SaveData()
     {
-        for (int i = 0; i < currencyObjects.Length; i++)
+        for (int i = 0; i < userData.currencies.Count; i++)
         {
-            userData.currencies[i] = currencyObjects[i].value;
+            CurrencyType type = currencyObjects[i].currencyType;
+            userData.currencies[type] = currencyObjects[i].amount;
         }
 
         userData.Save();

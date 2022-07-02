@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c307b053a25faae4f90b5e6878113354, type: 3}
-  m_Name: 5 - Diamond
+  m_Script: {fileID: 11500000, guid: 5dae846a4b3048f419535b07a1bd60b5, type: 3}
+  m_Name: '[4] - Platinum'
   m_EditorClassIdentifier: 
-  value: 0
+  currencyType: 3
+  amount: 0

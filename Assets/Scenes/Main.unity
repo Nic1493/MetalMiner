@@ -594,11 +594,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   userData: {fileID: 11400000, guid: 651cbbf396808f04e87153b0018379c7, type: 2}
   currencyObjects:
-  - {fileID: 11400000, guid: 33bd16f7078be7140a634c8d0de247ed, type: 2}
-  - {fileID: 11400000, guid: 6bb363de916a12444bb8544ccd57351f, type: 2}
-  - {fileID: 11400000, guid: 858f058412613104499aacd2881d9ca6, type: 2}
-  - {fileID: 11400000, guid: 5249b9332922fa445b7c4741c88c3bf6, type: 2}
-  - {fileID: 11400000, guid: ec3f0a3f084d9964ab056857df61c4a1, type: 2}
+  - {fileID: 11400000, guid: 157fe8c6b75c48f43b1b60174ba5a03c, type: 2}
+  - {fileID: 11400000, guid: 6c2bef8a6a1670b448db65de46c3bcaa, type: 2}
+  - {fileID: 11400000, guid: f8d632f3a296c8841bc5aa2b229116ba, type: 2}
+  - {fileID: 11400000, guid: ffeabac9ca355e444b9398c8636f941f, type: 2}
+  - {fileID: 11400000, guid: 3c55d9e448333654c959805d1f8d9fb1, type: 2}
 --- !u!4 &296581778
 Transform:
   m_ObjectHideFlags: 0
@@ -1138,7 +1138,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915e9b31635352c44ad7df699456dde4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  copperCurrency: {fileID: 11400000, guid: 33bd16f7078be7140a634c8d0de247ed, type: 2}
+  currencyObjects:
+  - {fileID: 11400000, guid: 157fe8c6b75c48f43b1b60174ba5a03c, type: 2}
+  - {fileID: 11400000, guid: 6c2bef8a6a1670b448db65de46c3bcaa, type: 2}
+  - {fileID: 11400000, guid: f8d632f3a296c8841bc5aa2b229116ba, type: 2}
+  - {fileID: 11400000, guid: ffeabac9ca355e444b9398c8636f941f, type: 2}
+  - {fileID: 11400000, guid: 3c55d9e448333654c959805d1f8d9fb1, type: 2}
   clickerLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -2325,11 +2330,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currencies:
-  - {fileID: 11400000, guid: 33bd16f7078be7140a634c8d0de247ed, type: 2}
-  - {fileID: 11400000, guid: 6bb363de916a12444bb8544ccd57351f, type: 2}
-  - {fileID: 11400000, guid: 858f058412613104499aacd2881d9ca6, type: 2}
-  - {fileID: 11400000, guid: 5249b9332922fa445b7c4741c88c3bf6, type: 2}
-  - {fileID: 11400000, guid: ec3f0a3f084d9964ab056857df61c4a1, type: 2}
+  - {fileID: 11400000, guid: 157fe8c6b75c48f43b1b60174ba5a03c, type: 2}
+  - {fileID: 11400000, guid: 6c2bef8a6a1670b448db65de46c3bcaa, type: 2}
+  - {fileID: 11400000, guid: f8d632f3a296c8841bc5aa2b229116ba, type: 2}
+  - {fileID: 11400000, guid: ffeabac9ca355e444b9398c8636f941f, type: 2}
+  - {fileID: 11400000, guid: 3c55d9e448333654c959805d1f8d9fb1, type: 2}
   coinAmountTexts:
   - {fileID: 1236523567}
   - {fileID: 982021258}
