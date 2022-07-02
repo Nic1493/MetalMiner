@@ -130,6 +130,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1979897468}
     m_Modifications:
+    - target: {fileID: 2353884854491119139, guid: f470eb7dc323b34409d96a133a2442d8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2353884854491119139, guid: f470eb7dc323b34409d96a133a2442d8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2353884854914393216, guid: f470eb7dc323b34409d96a133a2442d8, type: 3}
       propertyPath: m_Name
       value: Currency display (platinum)
@@ -372,6 +380,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1979897468}
     m_Modifications:
+    - target: {fileID: 2353884854491119139, guid: f470eb7dc323b34409d96a133a2442d8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2353884854491119139, guid: f470eb7dc323b34409d96a133a2442d8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2353884854914393216, guid: f470eb7dc323b34409d96a133a2442d8, type: 3}
       propertyPath: m_Name
       value: Currency display (diamond)
@@ -555,6 +571,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1979897468}
     m_Modifications:
+    - target: {fileID: 2353884854491119139, guid: f470eb7dc323b34409d96a133a2442d8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2353884854491119139, guid: f470eb7dc323b34409d96a133a2442d8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2353884854914393216, guid: f470eb7dc323b34409d96a133a2442d8, type: 3}
       propertyPath: m_Name
       value: Currency display (gold)
@@ -1082,6 +1106,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1979897468}
     m_Modifications:
+    - target: {fileID: 2353884854491119139, guid: f470eb7dc323b34409d96a133a2442d8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2353884854491119139, guid: f470eb7dc323b34409d96a133a2442d8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2353884854914393216, guid: f470eb7dc323b34409d96a133a2442d8, type: 3}
       propertyPath: m_Name
       value: Currency display (silver)
@@ -1274,6 +1306,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1979897468}
     m_Modifications:
+    - target: {fileID: 2353884854491119139, guid: f470eb7dc323b34409d96a133a2442d8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2353884854491119139, guid: f470eb7dc323b34409d96a133a2442d8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2353884854914393216, guid: f470eb7dc323b34409d96a133a2442d8, type: 3}
       propertyPath: m_Name
       value: Currency display (copper)
@@ -1817,12 +1857,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
+    m_Left: 32
     m_Right: 0
     m_Top: 18
     m_Bottom: 0
-  m_ChildAlignment: 1
-  m_Spacing: -128
+  m_ChildAlignment: 0
+  m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
