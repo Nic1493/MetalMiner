@@ -7,4 +7,6 @@ public class UserData : ScriptableObject
 {
     public SerializableDictionary<CurrencyType, int> currencies;
     public SerializableDictionary<BuildingType, int> buildings;
+
+    public int buildingTypesUnlocked;
 }

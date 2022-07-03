@@ -18,3 +18,4 @@ MonoBehaviour:
   buildings:
     keys: 
     values: 
+  buildingTypesUnlocked: 0

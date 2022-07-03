@@ -1,43 +1,60 @@
+using System;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 public class BuildingShop : MonoBehaviour
 {
+    [SerializeField] UserData userData;
+
+    [Space]
+
     [SerializeField] BuildingObject[] buildingObjects;
     [SerializeField] CurrencyObject[] currencyObjects;
-    [SerializeField] TextMeshProUGUI[] costTexts;
 
+    Button[] buildingButtons;
+
+    public event Action<BuildingType> PurchaseAction;
+    public event Action<BuildingType> FirstPurchaseAction;
+
+    void Awake()
+    {
+        buildingButtons = GetComponentsInChildren<Button>();
+    }
+
+    // enable building buttons based on amount of building types unlocked
     void Start()
     {
-        for (int i = 0; i < costTexts.Length; i++)
+        for (int i = 0; i < buildingButtons.Length; i++)
         {
-            costTexts[i].text = buildingObjects[i].purchaseCost.ToString();
+            buildingButtons[i].interactable = i <= userData.buildingTypesUnlocked;
         }
     }
 
-    // called by building purchase buttons
+    // called upon pressing building buttons
     public void PurchaseBuilding(BuildingObject buildingObject)
     {
         CurrencyObject currency = currencyObjects[(int)buildingObject.costCurrencyType];
-        int buildingCost = buildingObject.purchaseCost;
+        int purchaseCost = buildingObject.purchaseCost;
 
-        if (currency.amount >= buildingCost)
+        if (currency.amount >= purchaseCost)
         {
-            buildingObject.count++;
-            currency.amount -= buildingCost;
+            currency.amount -= purchaseCost;
 
-            int newPurchaseCost = CalculateBuildingCost(buildingObject);
+            BuildingType buildingType = buildingObject.buildingType;
+            PurchaseAction?.Invoke(buildingType);
 
-            buildingObject.purchaseCost = newPurchaseCost;
-            costTexts[(int)buildingObject.buildingType].text = newPurchaseCost.ToString();
+            if (buildingObject.count == 1)
+            {
+                FirstPurchaseAction?.Invoke(buildingObject.buildingType);
+
+                // display next building button
+                if ((int)buildingType + 1 < buildingButtons.Length)
+                {
+                    buildingButtons[(int)buildingType + 1].interactable = true;
+                }
+
+                userData.buildingTypesUnlocked++;
+            }
         }
-    }
-
-    // calculate new building cost
-    // y = 1.2 ^ (x - 1), where x = amount of buildings owned
-    int CalculateBuildingCost(BuildingObject buildingObject)
-    {
-        int newPurchaseCost = Mathf.Min(Mathf.RoundToInt(buildingObject.initialPurchaseCost * Mathf.Pow(1.2f, buildingObject.count)), int.MaxValue);
-        return newPurchaseCost;
     }
 }
