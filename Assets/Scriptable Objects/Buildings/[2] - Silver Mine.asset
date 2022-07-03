@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: '[2] - Silver Mine'
   m_EditorClassIdentifier: 
   buildingType: 1
-  costCurrency: 0
-  costAmount: 100
+  count: 0
+  costCurrencyType: 0
+  purchaseCost: 10
+  initialPurchaseCost: 10

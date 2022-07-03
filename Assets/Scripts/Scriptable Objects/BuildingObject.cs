@@ -9,5 +9,6 @@ public class BuildingObject : ScriptableObject
     [Space]
 
     public CurrencyType costCurrencyType;
-    public int costAmount;
+    public int purchaseCost;
+    public int initialPurchaseCost;
 }

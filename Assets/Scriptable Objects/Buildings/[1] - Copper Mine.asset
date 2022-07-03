@@ -15,4 +15,5 @@ MonoBehaviour:
   buildingType: 0
   count: 0
   costCurrencyType: 0
-  costAmount: 100
+  purchaseCost: 10
+  initialPurchaseCost: 10

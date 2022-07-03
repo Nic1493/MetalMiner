@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: '[4] - Platinum Mine'
   m_EditorClassIdentifier: 
   buildingType: 3
-  costCurrency: 2
-  costAmount: 100
+  count: 0
+  costCurrencyType: 2
+  purchaseCost: 10
+  initialPurchaseCost: 10

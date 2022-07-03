@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: '[5] - Diamond Mine'
   m_EditorClassIdentifier: 
   buildingType: 4
-  costCurrency: 3
-  costAmount: 100
+  count: 0
+  costCurrencyType: 3
+  purchaseCost: 10
+  initialPurchaseCost: 10
