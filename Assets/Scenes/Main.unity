@@ -619,6 +619,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5643174697558197820, guid: c692b204eb69d9e458c7393d77d97383, type: 3}
   m_PrefabInstance: {fileID: 167108329}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &185351584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 185351585}
+  - component: {fileID: 185351587}
+  - component: {fileID: 185351586}
+  m_Layer: 5
+  m_Name: Divider-h (bottom left)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &185351585
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185351584}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1331538129}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -720, y: -240}
+  m_SizeDelta: {x: 480, y: 32}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &185351586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185351584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 00a9e31de29d1f44dbacff5c74fcf132, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &185351587
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185351584}
+  m_CullTransparentMesh: 1
 --- !u!1 &209626084
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,7 +706,7 @@ GameObject:
   - component: {fileID: 209626087}
   - component: {fileID: 209626086}
   m_Layer: 5
-  m_Name: Divider (top right)
+  m_Name: Divider-h (top right)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1257,6 +1332,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5643174697558197820, guid: c692b204eb69d9e458c7393d77d97383, type: 3}
   m_PrefabInstance: {fileID: 610134431}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &610816757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 610816758}
+  - component: {fileID: 610816760}
+  - component: {fileID: 610816759}
+  m_Layer: 5
+  m_Name: Divider-v (bottom left)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &610816758
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610816757}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1331538129}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -492, y: -384}
+  m_SizeDelta: {x: 312, y: 32}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &610816759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610816757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 00a9e31de29d1f44dbacff5c74fcf132, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &610816760
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610816757}
+  m_CullTransparentMesh: 1
 --- !u!1 &662946879
 GameObject:
   m_ObjectHideFlags: 0
@@ -1620,7 +1770,7 @@ GameObject:
   - component: {fileID: 970438072}
   - component: {fileID: 970438071}
   m_Layer: 5
-  m_Name: Divider (side right)
+  m_Name: Divider-v (right)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1638,12 +1788,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1331538129}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 200, y: -56}
-  m_SizeDelta: {x: 960, y: 32}
+  m_AnchoredPosition: {x: 200, y: -58}
+  m_SizeDelta: {x: 964, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &970438071
 MonoBehaviour:
@@ -1931,7 +2081,7 @@ GameObject:
   - component: {fileID: 1126213213}
   - component: {fileID: 1126213212}
   m_Layer: 5
-  m_Name: Divider (top middle)
+  m_Name: Divider-h (top middle)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2134,7 +2284,9 @@ RectTransform:
   - {fileID: 1759077896}
   - {fileID: 1126213211}
   - {fileID: 209626085}
+  - {fileID: 185351585}
   - {fileID: 1898163498}
+  - {fileID: 610816758}
   - {fileID: 970438070}
   m_Father: {fileID: 1657264197}
   m_RootOrder: 0
@@ -2448,7 +2600,7 @@ GameObject:
   - component: {fileID: 1759077898}
   - component: {fileID: 1759077897}
   m_Layer: 5
-  m_Name: Divider (top left)
+  m_Name: Divider-h (top left)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2523,7 +2675,7 @@ GameObject:
   - component: {fileID: 1898163500}
   - component: {fileID: 1898163499}
   m_Layer: 5
-  m_Name: Divider (side left)
+  m_Name: Divider-v (top left)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2541,12 +2693,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1331538129}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -492, y: -56}
-  m_SizeDelta: {x: 960, y: 32}
+  m_AnchoredPosition: {x: -492, y: 86}
+  m_SizeDelta: {x: 676, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1898163499
 MonoBehaviour:
