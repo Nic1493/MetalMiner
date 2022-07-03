@@ -5,8 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New User Data", menuName = "Scriptable Object/User Data")]
 public class UserData : ScriptableObject
 {
-    public SerializableDictionary<CurrencyType, float> currencies;
-    public SerializableDictionary<BuildingType, int> buildings;
+    public SerializableDictionary<CurrencyType, float> currencyAmounts;
 
+    public SerializableDictionary<BuildingType, int> buildingCounts;
     public int buildingTypesUnlocked;
 }

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc66a258c32348a41b088615e0846b42, type: 3}
   m_Name: User Data
   m_EditorClassIdentifier: 
-  currencies:
+  currencyAmounts:
     keys: 
     values: []
-  buildings:
+  buildingCounts:
     keys: 
     values: 
   buildingTypesUnlocked: 0
