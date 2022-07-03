@@ -4,5 +4,5 @@ using UnityEngine;
 public class CurrencyObject : ScriptableObject
 {
     public CurrencyType currencyType;
-    public int amount;
+    public float amount;
 }

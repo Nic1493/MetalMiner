@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currencies:
     keys: 
-    values: 
+    values: []
   buildings:
     keys: 
     values: 

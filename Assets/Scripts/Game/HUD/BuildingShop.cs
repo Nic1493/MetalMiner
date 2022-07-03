@@ -34,7 +34,7 @@ public class BuildingShop : MonoBehaviour
     public void PurchaseBuilding(BuildingObject buildingObject)
     {
         CurrencyObject currency = currencyObjects[(int)buildingObject.costCurrencyType];
-        int purchaseCost = buildingObject.purchaseCost;
+        float purchaseCost = buildingObject.purchaseCost;
 
         if (currency.amount >= purchaseCost)
         {

@@ -14,6 +14,6 @@ public class CurrencyDisplay : MonoBehaviour
     void Update()
     {
         // update currency amount display
-        currencyAmountText.text = currencyObject.amount.ToString();
+        currencyAmountText.text = ((int)currencyObject.amount).ToString();
     }
 }

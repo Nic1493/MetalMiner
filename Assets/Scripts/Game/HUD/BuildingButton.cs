@@ -35,13 +35,13 @@ public class BuildingButton : MonoBehaviour
     // y = 1.2 ^ (x - 1), where x = amount of buildings owned
     void UpdateBuildingCost()
     {
-        int newPurchaseCost = Mathf.Min(Mathf.RoundToInt(buildingObject.initialPurchaseCost * Mathf.Pow(1.2f, buildingObject.count)), int.MaxValue);
+        float newPurchaseCost = buildingObject.initialPurchaseCost * Mathf.Pow(1.2f, buildingObject.count);
         buildingObject.purchaseCost = newPurchaseCost;
     }
 
     void UpdateTexts()
     {
-        buildingCostText.text = buildingObject.purchaseCost.ToString();
+        buildingCostText.text = ((int)buildingObject.purchaseCost).ToString();
         buildingCountText.text = $"{buildingObject.count}x";
     }
 }
