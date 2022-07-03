@@ -9,14 +9,16 @@ public class DataManager : MonoBehaviour
 
     void LoadData()
     {
-        userData.Load();
-
-        // make sure currency dictionary is initialized
-        if (userData.currencyAmounts.Count == 0)
+        if (!FileHandler.TryLoad(ref userData))
         {
             for (int i = 0; i < currencyObjects.Length; i++)
             {
                 userData.currencyAmounts.Add(currencyObjects[i].currencyType, 0);
+            }
+
+            for (int i = 0; i < buildingObjects.Length; i++)
+            {
+                userData.buildingCounts.Add(buildingObjects[i].buildingType, 0);
             }
         }
 
@@ -25,15 +27,6 @@ public class DataManager : MonoBehaviour
         {
             CurrencyType type = currencyObjects[i].currencyType;
             currencyObjects[i].amount = userData.currencyAmounts[type];
-        }
-
-        // make sure building dictionary is initialized
-        if (userData.buildingCounts.Count == 0)
-        {
-            for (int i = 0; i < buildingObjects.Length; i++)
-            {
-                userData.buildingCounts.Add(buildingObjects[i].buildingType, buildingObjects[i].count);
-            }
         }
 
         // load building data from UserData to building scriptable objects

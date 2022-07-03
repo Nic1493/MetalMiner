@@ -10,7 +10,7 @@ public static class FileHandler
     static readonly string dataDirectoryPath = Path.Combine(Application.persistentDataPath, "Data");
     static readonly string dataFilePath = Path.Combine(dataDirectoryPath, "userdata.json");
 
-    public static void Load(this UserData userData)
+    public static bool TryLoad(ref UserData userData)
     {
         Directory.CreateDirectory(dataDirectoryPath);
 
@@ -23,12 +23,16 @@ public static class FileHandler
                 string data = sr.ReadToEnd();
 
                 JsonUtility.FromJsonOverwrite(data, userData);
+                return true;
             }
             catch (Exception e)
             {
                 Debug.LogError($"Error occurred when trying to load data from file \n{e}");
+                return false;
             }
         }
+
+        return false;
     }
 
     public static void Save(this UserData userData)
