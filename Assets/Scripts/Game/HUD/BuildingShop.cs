@@ -57,4 +57,14 @@ public class BuildingShop : MonoBehaviour
             }
         }
     }
+
+    public void UpgradeBuildingLevel(BuildingObject buildingObject)
+    {
+
+    }
+
+    public void UpgradeBuildingSpeed(BuildingObject buildingObject)
+    {
+
+    }
 }
