@@ -2,10 +2,17 @@ using UnityEngine;
 
 public class AutoMiner : MonoBehaviour
 {
-    [SerializeField] BuildingObject buildingObject;
-    [SerializeField] CurrencyObject currencyObject;
+    public CurrencyObject currencyObject;
 
+    [SerializeField] BuildingObject buildingObject;
     Building building;
+
+    float currencyPerSecond;
+    public float CurrencyPerSecond
+    {
+        get => currencyPerSecond;
+        private set => currencyPerSecond = value;
+    }
 
     void Start()
     {
@@ -14,7 +21,7 @@ public class AutoMiner : MonoBehaviour
 
     void Update()
     {
-        float currencyPerSecond = building.count * building.level * building.speedMultiplier;
-        currencyObject.amount += currencyPerSecond * Time.deltaTime;
+        CurrencyPerSecond = building.count * building.level * building.speedMultiplier;
+        currencyObject.amount += CurrencyPerSecond * Time.deltaTime;
     }
 }
