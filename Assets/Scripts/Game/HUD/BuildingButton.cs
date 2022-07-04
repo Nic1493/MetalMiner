@@ -13,8 +13,8 @@ public class BuildingButton : MonoBehaviour
 
     void Awake()
     {
-        GetComponentInParent<BuildingShop>().PurchaseAction += UpdateTexts;
-        GetComponentInParent<BuildingShop>().LevelUpAction += UpdateTexts;
+        GetComponentInParent<BuildingPurchaseShop>().PurchaseAction += UpdateTexts;
+        FindObjectOfType<BuildingUpgradeShop>().LevelUpAction += UpdateTexts;
     }
 
     void Start()

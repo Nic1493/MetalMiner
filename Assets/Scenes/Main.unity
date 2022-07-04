@@ -501,7 +501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7423659700045411244, guid: 4cdeaf2cf35a6f04ea31f8e62e567c65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: BuildingShop, Assembly-CSharp
+      value: BuildingUpgradeShop, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7423659700045411244, guid: 4cdeaf2cf35a6f04ea31f8e62e567c65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -868,7 +868,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7423659700045411244, guid: 4cdeaf2cf35a6f04ea31f8e62e567c65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: BuildingShop, Assembly-CSharp
+      value: BuildingUpgradeShop, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7423659700045411244, guid: 4cdeaf2cf35a6f04ea31f8e62e567c65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -1234,7 +1234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7423659700045411244, guid: 4cdeaf2cf35a6f04ea31f8e62e567c65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: BuildingShop, Assembly-CSharp
+      value: BuildingUpgradeShop, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7423659700045411244, guid: 4cdeaf2cf35a6f04ea31f8e62e567c65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -1532,7 +1532,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 383913245}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ee73e488f810204ebe074fdcc7dcdf8, type: 3}
+  m_Script: {fileID: 11500000, guid: 3aca49a6aacdbbf4c9905f192f75942f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   userData: {fileID: 11400000, guid: 651cbbf396808f04e87153b0018379c7, type: 2}
@@ -1738,7 +1738,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7423659700045411244, guid: 4cdeaf2cf35a6f04ea31f8e62e567c65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: BuildingShop, Assembly-CSharp
+      value: BuildingUpgradeShop, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7423659700045411244, guid: 4cdeaf2cf35a6f04ea31f8e62e567c65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -3786,7 +3786,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7423659700045411244, guid: 4cdeaf2cf35a6f04ea31f8e62e567c65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: BuildingShop, Assembly-CSharp
+      value: BuildingUpgradeShop, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7423659700045411244, guid: 4cdeaf2cf35a6f04ea31f8e62e567c65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -3932,7 +3932,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7423659700045411244, guid: 4cdeaf2cf35a6f04ea31f8e62e567c65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: BuildingShop, Assembly-CSharp
+      value: BuildingUpgradeShop, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7423659700045411244, guid: 4cdeaf2cf35a6f04ea31f8e62e567c65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -4607,7 +4607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7423659700045411244, guid: 4cdeaf2cf35a6f04ea31f8e62e567c65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: BuildingShop, Assembly-CSharp
+      value: BuildingUpgradeShop, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7423659700045411244, guid: 4cdeaf2cf35a6f04ea31f8e62e567c65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -4952,7 +4952,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7423659700045411244, guid: 4cdeaf2cf35a6f04ea31f8e62e567c65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: BuildingShop, Assembly-CSharp
+      value: BuildingUpgradeShop, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7423659700045411244, guid: 4cdeaf2cf35a6f04ea31f8e62e567c65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -5098,7 +5098,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7423659700045411244, guid: 4cdeaf2cf35a6f04ea31f8e62e567c65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: BuildingShop, Assembly-CSharp
+      value: BuildingUpgradeShop, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7423659700045411244, guid: 4cdeaf2cf35a6f04ea31f8e62e567c65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -5784,7 +5784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7423659700045411244, guid: 4cdeaf2cf35a6f04ea31f8e62e567c65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: BuildingShop, Assembly-CSharp
+      value: BuildingUpgradeShop, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7423659700045411244, guid: 4cdeaf2cf35a6f04ea31f8e62e567c65, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument

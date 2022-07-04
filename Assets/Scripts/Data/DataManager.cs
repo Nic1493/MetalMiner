@@ -38,10 +38,13 @@ public class DataManager : MonoBehaviour
         // load building data from UserData to building scriptable objects
         for (int i = 0; i < buildingObjects.Length; i++)
         {
-            buildingObjects[i].building.count = userData.buildings[i].count;
-            buildingObjects[i].building.level = userData.buildings[i].level;
-            buildingObjects[i].building.speedMultiplier = userData.buildings[i].speedMultiplier;
-            buildingObjects[i].building.purchaseCost = userData.buildings[i].purchaseCost;
+            Building building = buildingObjects[i].building;
+
+            building.count = userData.buildings[i].count;
+            building.level = userData.buildings[i].level;
+            building.speedMultiplier = userData.buildings[i].speedMultiplier;
+            building.purchaseCost = userData.buildings[i].purchaseCost;
+            building.upgradeCosts = userData.buildings[i].upgradeCosts;
         }
     }
 
@@ -87,7 +90,7 @@ public class DataManager : MonoBehaviour
         {
             buildingObjects[i].building.count = 0;
             buildingObjects[i].building.level = 1;
-            buildingObjects[i].building.initialPurchaseCost = 10;
+            buildingObjects[i].building.initialPurchaseCost = 100;
         }
 #endif
         #endregion

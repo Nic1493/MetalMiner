@@ -23,7 +23,7 @@ public class Building
 
     [Space]
 
-    public SerializableDictionary<UpgradeType, float> upgradeCosts = new SerializableDictionary<UpgradeType, float>();
+    public SerializableDictionary<UpgradeType, float> upgradeCosts;
 
     public Building()
     {
@@ -36,7 +36,10 @@ public class Building
         initialPurchaseCost = 100f;
         purchaseCost = initialPurchaseCost;
 
-        upgradeCosts.Add(UpgradeType.LevelUp, 1000f);
-        upgradeCosts.Add(UpgradeType.SpeedUp, 500f);
+        upgradeCosts = new SerializableDictionary<UpgradeType, float>
+        {
+            { UpgradeType.LevelUp, 1000f },
+            { UpgradeType.SpeedUp, 500f }
+        };
     }
 }
