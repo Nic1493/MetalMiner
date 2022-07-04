@@ -195,8 +195,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6218671387390926182}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 6218671387390926177}
+        m_TargetAssemblyTypeName: CurrencyConverterInputField, Assembly-CSharp
+        m_MethodName: OnScrollButtonPressed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CurrencyConverterInputField, Assembly-CSharp
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
@@ -525,17 +537,17 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 2
   m_RegexValue: 
   m_GlobalPointSize: 14
-  m_CharacterLimit: 0
+  m_CharacterLimit: 9
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls: []
@@ -574,10 +586,10 @@ MonoBehaviour:
       m_Calls: []
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
-  m_SelectionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_SelectionColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   m_Text: 
   m_CaretBlinkRate: 0.85
-  m_CaretWidth: 1
+  m_CaretWidth: 2
   m_ReadOnly: 0
   m_RichText: 1
   m_GlobalFontAsset: {fileID: 11400000, guid: f48f6fae29872dd479776a90c42bfcb0, type: 2}
@@ -599,7 +611,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b520c2317abc413478ba1c69f966d2f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherInputField: {fileID: 0}
+  field: {fileID: 6218671387390926180}
+  selectedIndex: 0
+  currencyImages:
+  - {fileID: 3569385390717296595}
+  - {fileID: 3017752309548052504}
+  - {fileID: 6946087083883569673}
+  - {fileID: 3542154622548715472}
+  - {fileID: 4653936815346042140}
 --- !u!1 &6218671387551366296
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,8 +924,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6218671387390926182}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 6218671387390926177}
+        m_TargetAssemblyTypeName: CurrencyConverterInputField, Assembly-CSharp
+        m_MethodName: OnScrollButtonPressed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: CurrencyConverterInputField, Assembly-CSharp
         m_MethodName: 
         m_Mode: 1
         m_Arguments:

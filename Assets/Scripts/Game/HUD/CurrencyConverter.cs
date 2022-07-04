@@ -5,21 +5,56 @@ using TMPro;
 public class CurrencyConverter : MonoBehaviour
 {
     [SerializeField] Button convertButton;
-    [SerializeField] TMP_InputField inputField;
+
+    [Space]
+
+    [SerializeField] CurrencyConverterInputField inputField;
+    [SerializeField] CurrencyConverterInputField outputField;
+
+    [Space]
+
     [SerializeField] CurrencyObject[] currencyObjects;
 
-    // called from pressing Convert button in scene
-    public void OnConvertPressed()
+    int inputAmount;
+    int outputAmount;
+
+    // calculate amount of currency that will result from the conversion, based on input amount and selected currencies
+    public void UpdateResultingInputField()
     {
-        if (int.TryParse(inputField.text, out int inputFieldValue))
+        inputAmount = ParseStringToInt(inputField.field.text);
+        if (inputAmount == 0) return;
+
+        int ordersOfMagnitude = inputField.selectedIndex - outputField.selectedIndex;
+        outputAmount = (int)(inputAmount * Mathf.Pow(10, ordersOfMagnitude));
+
+        outputField.field.text = outputAmount.ToString();
+
+        // ensure that player has enough currency to convert, and that conversion doesn't result in 0 currency
+        if (inputAmount > currencyObjects[inputField.selectedIndex].amount || outputAmount == 0)
         {
-            // to-do
-            print(inputFieldValue);
+            convertButton.interactable = false;
+        }
+        else
+        {
+            convertButton.interactable = true;
         }
     }
 
-    public void CheckForValidConversion()
+    // convert input field text to number
+    int ParseStringToInt(string str)
     {
-        // to-do
+        if (int.TryParse(str, out int value))
+        {
+            return value;
+        }
+
+        return 0;
+    }
+
+    // called from pressing Convert button in Currency Converter section
+    public void OnConvertPressed()
+    {
+        currencyObjects[inputField.selectedIndex].amount -= inputAmount;
+        currencyObjects[outputField.selectedIndex].amount += outputAmount;
     }
 }
