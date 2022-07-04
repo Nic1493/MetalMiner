@@ -145,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2898633141108870458, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5551619260334345261, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
       propertyPath: m_Sprite
@@ -243,6 +243,14 @@ PrefabInstance:
       propertyPath: buildingObject
       value: 
       objectReference: {fileID: 11400000, guid: fdc0fce6810489f46be28ea15611f5b9, type: 2}
+    - target: {fileID: 8711697923743273203, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711697923743273203, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
 --- !u!224 &30350861 stripped
@@ -444,7 +452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2898633141108870458, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5551619260334345261, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
       propertyPath: m_Sprite
@@ -542,6 +550,14 @@ PrefabInstance:
       propertyPath: buildingObject
       value: 
       objectReference: {fileID: 11400000, guid: b76b5b91fb92b124681951163a05fbf3, type: 2}
+    - target: {fileID: 8711697923743273203, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711697923743273203, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
 --- !u!224 &70660544 stripped
@@ -1549,7 +1565,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2898633141108870458, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5551619260334345261, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
       propertyPath: m_Sprite
@@ -1647,6 +1663,14 @@ PrefabInstance:
       propertyPath: buildingObject
       value: 
       objectReference: {fileID: 11400000, guid: 64cec6252e2f7614abaeabc55ad5ccba, type: 2}
+    - target: {fileID: 8711697923743273203, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711697923743273203, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
 --- !u!224 &757349129 stripped
@@ -1847,7 +1871,7 @@ GameObject:
   - component: {fileID: 974186938}
   - component: {fileID: 974186937}
   m_Layer: 5
-  m_Name: Building buttons (canvas)
+  m_Name: Building purchase buttons (canvas)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2896,7 +2920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2898633141108870458, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5551619260334345261, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
       propertyPath: m_Sprite
@@ -2994,6 +3018,14 @@ PrefabInstance:
       propertyPath: buildingObject
       value: 
       objectReference: {fileID: 11400000, guid: 5dff64e79e8739740a90a7020647828c, type: 2}
+    - target: {fileID: 8711697923743273203, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711697923743273203, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
 --- !u!224 &1696636434 stripped
@@ -3761,7 +3793,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2898633141108870458, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5960485972886976908, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
       propertyPath: m_RootOrder
@@ -3851,5 +3883,13 @@ PrefabInstance:
       propertyPath: buildingObject
       value: 
       objectReference: {fileID: 11400000, guid: ab4306a93dce4f845a6d60c6f609ccba, type: 2}
+    - target: {fileID: 8711697923743273203, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711697923743273203, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
