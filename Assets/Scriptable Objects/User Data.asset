@@ -13,42 +13,7 @@ MonoBehaviour:
   m_Name: User Data
   m_EditorClassIdentifier: 
   currencyAmounts:
-    keys: 0000000001000000020000000300000004000000
-    values:
-    - 3.628026
-    - 2.1768165
-    - 1.4512109
-    - 0.7256054
-    - 0
-  buildings:
-  - buildingType: 0
-    count: 0
-    level: 1
-    costCurrencyType: 0
-    purchaseCost: 10
-    initialPurchaseCost: 10
-  - buildingType: 1
-    count: 0
-    level: 1
-    costCurrencyType: 0
-    purchaseCost: 10
-    initialPurchaseCost: 10
-  - buildingType: 2
-    count: 0
-    level: 1
-    costCurrencyType: 1
-    purchaseCost: 10
-    initialPurchaseCost: 10
-  - buildingType: 3
-    count: 0
-    level: 1
-    costCurrencyType: 2
-    purchaseCost: 10
-    initialPurchaseCost: 10
-  - buildingType: 4
-    count: 0
-    level: 1
-    costCurrencyType: 3
-    purchaseCost: 10
-    initialPurchaseCost: 10
+    keys: 
+    values: []
+  buildings: []
   buildingTypesUnlocked: 0
