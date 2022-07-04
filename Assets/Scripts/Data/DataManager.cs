@@ -18,8 +18,10 @@ public class DataManager : MonoBehaviour
 
             for (int i = 0; i < buildingObjects.Length; i++)
             {
-                userData.buildingCounts.Add(buildingObjects[i].buildingType, 0);
+                userData.buildings.Add(buildingObjects[i].building);
             }
+
+            userData.buildingTypesUnlocked = 0;
         }
 
         // load currency data from UserData to currency scriptable objects
@@ -32,8 +34,9 @@ public class DataManager : MonoBehaviour
         // load building data from UserData to building scriptable objects
         for (int i = 0; i < buildingObjects.Length; i++)
         {
-            BuildingType type = buildingObjects[i].buildingType;
-            buildingObjects[i].count = userData.buildingCounts[type];
+            buildingObjects[i].building.count = userData.buildings[i].count;
+            buildingObjects[i].building.level = userData.buildings[i].level;
+            buildingObjects[i].building.purchaseCost = userData.buildings[i].purchaseCost;
         }
     }
 
@@ -47,10 +50,9 @@ public class DataManager : MonoBehaviour
         }
 
         // save building data from building scriptable objects to UserData
-        for (int i = 0; i < userData.buildingCounts.Count; i++)
+        for (int i = 0; i < userData.buildings.Count; i++)
         {
-            BuildingType type = buildingObjects[i].buildingType;
-            userData.buildingCounts[type] = buildingObjects[i].count;
+            userData.buildings[i] = buildingObjects[i].building;
         }
 
         userData.Save();
@@ -64,5 +66,25 @@ public class DataManager : MonoBehaviour
     void OnApplicationQuit()
     {
         SaveData();
+
+        #region DEBUG
+#if UNITY_EDITOR
+        userData.currencyAmounts.Clear();
+        userData.buildings.Clear();
+        userData.buildingTypesUnlocked = 0;
+
+        for (int i = 0; i < currencyObjects.Length; i++)
+        {
+            currencyObjects[i].amount = 0;
+        }
+
+        for (int i = 0; i < buildingObjects.Length; i++)
+        {
+            buildingObjects[i].building.count = 0;
+            buildingObjects[i].building.level = 1;
+            buildingObjects[i].building.initialPurchaseCost = 10;
+        }
+#endif
+        #endregion
     }
 }

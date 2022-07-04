@@ -33,19 +33,19 @@ public class BuildingShop : MonoBehaviour
     // called upon pressing building buttons
     public void PurchaseBuilding(BuildingObject buildingObject)
     {
-        CurrencyObject currency = currencyObjects[(int)buildingObject.costCurrencyType];
-        float purchaseCost = buildingObject.purchaseCost;
+        CurrencyObject currency = currencyObjects[(int)buildingObject.building.costCurrencyType];
+        float purchaseCost = buildingObject.building.purchaseCost;
 
         if (currency.amount >= purchaseCost)
         {
             currency.amount -= purchaseCost;
 
-            BuildingType buildingType = buildingObject.buildingType;
+            BuildingType buildingType = buildingObject.building.buildingType;
             PurchaseAction?.Invoke(buildingType);
 
-            if (buildingObject.count == 1)
+            if (buildingObject.building.count == 1)
             {
-                FirstPurchaseAction?.Invoke(buildingObject.buildingType);
+                FirstPurchaseAction?.Invoke(buildingObject.building.buildingType);
 
                 // display next building button
                 if ((int)buildingType + 1 < buildingButtons.Length)

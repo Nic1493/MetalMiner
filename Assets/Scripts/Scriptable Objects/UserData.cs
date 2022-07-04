@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
@@ -7,6 +8,6 @@ public class UserData : ScriptableObject
 {
     public SerializableDictionary<CurrencyType, float> currencyAmounts;
 
-    public SerializableDictionary<BuildingType, int> buildingCounts;
+    public List<Building> buildings;
     public int buildingTypesUnlocked;
 }

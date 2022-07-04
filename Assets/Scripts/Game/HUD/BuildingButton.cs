@@ -17,9 +17,9 @@ public class BuildingButton : MonoBehaviour
 
     void OnPurchase(BuildingType buildingType)
     {
-        if (buildingObject.buildingType == buildingType)
+        if (buildingObject.building.buildingType == buildingType)
         {
-            buildingObject.count++;
+            buildingObject.building.count++;
             UpdateBuildingCost();
             UpdateTexts();
         }
@@ -35,13 +35,13 @@ public class BuildingButton : MonoBehaviour
     // y = 1.2 ^ (x - 1), where x = amount of buildings owned
     void UpdateBuildingCost()
     {
-        float newPurchaseCost = buildingObject.initialPurchaseCost * Mathf.Pow(1.2f, buildingObject.count);
-        buildingObject.purchaseCost = newPurchaseCost;
+        float newPurchaseCost = buildingObject.building.initialPurchaseCost * Mathf.Pow(1.2f, buildingObject.building.count);
+        buildingObject.building.purchaseCost = newPurchaseCost;
     }
 
     void UpdateTexts()
     {
-        buildingCostText.text = ((int)buildingObject.purchaseCost).ToString();
-        buildingCountText.text = $"{buildingObject.count}x";
+        buildingCostText.text = ((int)buildingObject.building.purchaseCost).ToString();
+        buildingCountText.text = $"{buildingObject.building.count}x";
     }
 }

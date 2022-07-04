@@ -7,7 +7,7 @@ public class AutoMiner : MonoBehaviour
 
     void Update()
     {
-        float currencyPerSecond = buildingObject.count;
+        float currencyPerSecond = buildingObject.building.count;
         currencyObject.amount += currencyPerSecond * Time.deltaTime;
     }
 }
