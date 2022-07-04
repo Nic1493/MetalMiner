@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DataManager : MonoBehaviour
@@ -16,9 +18,11 @@ public class DataManager : MonoBehaviour
                 userData.currencyAmounts.Add(currencyObjects[i].currencyType, 0);
             }
 
+            userData.buildings = new List<Building>(Enum.GetNames(typeof(BuildingType)).Length);
+
             for (int i = 0; i < buildingObjects.Length; i++)
             {
-                userData.buildings.Add(buildingObjects[i].building);
+                userData.buildings.Add(new Building());
             }
 
             userData.buildingTypesUnlocked = 0;
@@ -36,6 +40,7 @@ public class DataManager : MonoBehaviour
         {
             buildingObjects[i].building.count = userData.buildings[i].count;
             buildingObjects[i].building.level = userData.buildings[i].level;
+            buildingObjects[i].building.speedMultiplier = userData.buildings[i].speedMultiplier;
             buildingObjects[i].building.purchaseCost = userData.buildings[i].purchaseCost;
         }
     }

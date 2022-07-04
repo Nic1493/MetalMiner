@@ -13,10 +13,30 @@ public class Building
     public BuildingType buildingType;
     public int count;
     public int level;
+    public float speedMultiplier;
 
     [Space]
 
     public CurrencyType costCurrencyType;
     public float purchaseCost;
     public float initialPurchaseCost;
+
+    [Space]
+
+    public SerializableDictionary<UpgradeType, float> upgradeCosts = new SerializableDictionary<UpgradeType, float>();
+
+    public Building()
+    {
+        buildingType = BuildingType.CopperMine;
+        count = 0;
+        level = 1;
+        speedMultiplier = 1f;
+
+        costCurrencyType = CurrencyType.Copper;
+        initialPurchaseCost = 100f;
+        purchaseCost = initialPurchaseCost;
+
+        upgradeCosts.Add(UpgradeType.LevelUp, 1000f);
+        upgradeCosts.Add(UpgradeType.SpeedUp, 500f);
+    }
 }

@@ -15,3 +15,9 @@ public enum BuildingType
     PlatinumMine,
     DiamondMine
 }
+
+public enum UpgradeType
+{
+    LevelUp,
+    SpeedUp
+}

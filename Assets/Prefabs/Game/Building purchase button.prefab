@@ -836,6 +836,7 @@ MonoBehaviour:
   buildingObject: {fileID: 0}
   buildingCostText: {fileID: 2176735783049058478}
   buildingCountText: {fileID: 8172040279617743260}
+  buildingLevelText: {fileID: 4366787030807347331}
 --- !u!1 &7451190988549901831
 GameObject:
   m_ObjectHideFlags: 0

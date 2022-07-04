@@ -16,6 +16,10 @@ MonoBehaviour:
     buildingType: 1
     count: 0
     level: 1
+    speedMultiplier: 0
     costCurrencyType: 0
     purchaseCost: 10
     initialPurchaseCost: 10
+    upgradeCosts:
+      keys: 
+      values: []
