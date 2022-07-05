@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using static CoroutineHelper;
 
 public class Clicker : MonoBehaviour
 {
@@ -9,9 +11,15 @@ public class Clicker : MonoBehaviour
 
     bool isClicking;
 
+    SpriteRenderer clickerSprite;
+    IEnumerator clickAnimation;
+    const float AnimationDuration = 0.1f;
+    const float ShrinkSize = 0.9f;
+
     void Awake()
     {
         mainCam = Camera.main;
+        clickerSprite = GetComponentInChildren<SpriteRenderer>();
     }
 
     void Update()
@@ -26,14 +34,34 @@ public class Clicker : MonoBehaviour
             if (Input.GetMouseButtonDown(0) && IsMouseOverClicker())
             {
                 isClicking = true;
+
+                if (clickAnimation != null)
+                {
+                    StopCoroutine(clickAnimation);
+                }
+
+                clickAnimation = Click(clickerSprite.size.x, ShrinkSize);
+                StartCoroutine(clickAnimation);
             }
         }
         else
         {
-            if (Input.GetMouseButtonUp(0) && IsMouseOverClicker())
+            if (Input.GetMouseButtonUp(0))
             {
                 isClicking = false;
-                copperCurrency.amount++;
+
+                if (IsMouseOverClicker())
+                {
+                    copperCurrency.amount++;
+                }
+
+                if (clickAnimation != null)
+                {
+                    StopCoroutine(clickAnimation);
+                }
+
+                clickAnimation = Click(clickerSprite.size.x, 1f);
+                StartCoroutine(clickAnimation);
             }
         }
     }
@@ -45,5 +73,19 @@ public class Clicker : MonoBehaviour
         Collider2D hit = Physics2D.OverlapPoint(mousePosition, clickerLayer);
 
         return hit != null;
+    }
+
+    IEnumerator Click(float startScale, float endScale)
+    {
+        float currentLerpTime = 0f;
+
+        while (currentLerpTime < AnimationDuration)
+        {
+            float lerpProgress = currentLerpTime / AnimationDuration;
+            clickerSprite.size = Mathf.Lerp(startScale, endScale, lerpProgress) * Vector3.one;
+
+            yield return EndOfFrame;
+            currentLerpTime += Time.deltaTime;
+        }
     }
 }
