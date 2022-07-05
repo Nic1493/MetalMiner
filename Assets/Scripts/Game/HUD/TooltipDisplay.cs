@@ -46,7 +46,7 @@ public class TooltipDisplay : MonoBehaviour
 
         tooltipText.text = $"Upgrade the {buildingName} from Lv. {currentLevel} to Lv. {currentLevel + 1}.";
         currencyDisplay.sprite = currencySprites[(int)building.upgradeCurrencyType];
-        costText.text = building.upgradeCosts[UpgradeType.LevelUp].ToString();
+        costText.text = ((int)building.upgradeCosts[UpgradeType.LevelUp]).ToString();
     }
 
     public void OnPointerOverUpgradeSpeed(BuildingObject buildingObject)
@@ -60,7 +60,7 @@ public class TooltipDisplay : MonoBehaviour
 
         tooltipText.text = $"Increase the production speed of {buildingName} from {currentSpeed:f1}x to {currentSpeed + 0.1:f1}x.";
         currencyDisplay.sprite = currencySprites[(int)building.upgradeCurrencyType];
-        costText.text = building.upgradeCosts[UpgradeType.SpeedUp].ToString();
+        costText.text = ((int)building.upgradeCosts[UpgradeType.SpeedUp]).ToString();
     }
 
     public void OnPointerExit()
