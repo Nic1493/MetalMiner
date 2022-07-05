@@ -2229,6 +2229,14 @@ PrefabInstance:
       propertyPath: buildingObject
       value: 
       objectReference: {fileID: 11400000, guid: fdc0fce6810489f46be28ea15611f5b9, type: 2}
+    - target: {fileID: 2195093433276323456, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2195093433276323456, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5960485972886976909, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
       propertyPath: m_text
       value: Copper Mine
@@ -2844,12 +2852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915e9b31635352c44ad7df699456dde4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currencyObjects:
-  - {fileID: 11400000, guid: 157fe8c6b75c48f43b1b60174ba5a03c, type: 2}
-  - {fileID: 11400000, guid: 6c2bef8a6a1670b448db65de46c3bcaa, type: 2}
-  - {fileID: 11400000, guid: f8d632f3a296c8841bc5aa2b229116ba, type: 2}
-  - {fileID: 11400000, guid: ffeabac9ca355e444b9398c8636f941f, type: 2}
-  - {fileID: 11400000, guid: 3c55d9e448333654c959805d1f8d9fb1, type: 2}
+  copperCurrency: {fileID: 11400000, guid: 157fe8c6b75c48f43b1b60174ba5a03c, type: 2}
   clickerLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -3903,6 +3906,14 @@ PrefabInstance:
       propertyPath: buildingObject
       value: 
       objectReference: {fileID: 11400000, guid: ab4306a93dce4f845a6d60c6f609ccba, type: 2}
+    - target: {fileID: 2195093433276323456, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2195093433276323456, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5960485972886976909, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
       propertyPath: m_text
       value: Copper Mine
@@ -4843,6 +4854,14 @@ PrefabInstance:
       propertyPath: buildingObject
       value: 
       objectReference: {fileID: 11400000, guid: 64cec6252e2f7614abaeabc55ad5ccba, type: 2}
+    - target: {fileID: 2195093433276323456, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2195093433276323456, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5551619260334345261, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -5100,6 +5119,14 @@ PrefabInstance:
       propertyPath: buildingObject
       value: 
       objectReference: {fileID: 11400000, guid: 5dff64e79e8739740a90a7020647828c, type: 2}
+    - target: {fileID: 2195093433276323456, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2195093433276323456, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5551619260334345261, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -5246,6 +5273,14 @@ PrefabInstance:
       propertyPath: buildingObject
       value: 
       objectReference: {fileID: 11400000, guid: b76b5b91fb92b124681951163a05fbf3, type: 2}
+    - target: {fileID: 2195093433276323456, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2195093433276323456, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5551619260334345261, guid: 9d76c1d55a8c8a64e9f21eb9873b4e76, type: 3}
       propertyPath: m_Sprite
       value: 

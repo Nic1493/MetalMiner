@@ -4,10 +4,11 @@ public class Clicker : MonoBehaviour
 {
     Camera mainCam;
 
-    [SerializeField] CurrencyObject[] currencyObjects;
+    [SerializeField] CurrencyObject copperCurrency;
     [SerializeField] LayerMask clickerLayer;
 
-    // cache components
+    bool isClicking;
+
     void Awake()
     {
         mainCam = Camera.main;
@@ -20,17 +21,29 @@ public class Clicker : MonoBehaviour
 
     void GetMouseInput()
     {
-        // on LMB pressed
-        if (Input.GetMouseButtonDown(0))
+        if (!isClicking)
         {
-            // check if mouse pressed clicker
-            Vector3 mousePosition = mainCam.ScreenToWorldPoint(Input.mousePosition);
-            var hit = Physics2D.OverlapPoint(mousePosition, clickerLayer);
-
-            if (hit != null)
+            if (Input.GetMouseButtonDown(0) && IsMouseOverClicker())
             {
-                currencyObjects[0].amount++;
+                isClicking = true;
             }
         }
+        else
+        {
+            if (Input.GetMouseButtonUp(0) && IsMouseOverClicker())
+            {
+                isClicking = false;
+                copperCurrency.amount++;
+            }
+        }
+    }
+
+    // check if mouse's position is within clicker object's area
+    bool IsMouseOverClicker()
+    {
+        Vector3 mousePosition = mainCam.ScreenToWorldPoint(Input.mousePosition);
+        Collider2D hit = Physics2D.OverlapPoint(mousePosition, clickerLayer);
+
+        return hit != null;
     }
 }
