@@ -12,6 +12,13 @@ public class TooltipDisplay : MonoBehaviour
     [SerializeField] Image currencyDisplay;
     [SerializeField] Sprite[] currencySprites;
 
+    void Awake()
+    {
+        BuildingUpgradeShop buildingUpgradeShop = FindObjectOfType<BuildingUpgradeShop>();
+        buildingUpgradeShop.LevelUpAction += OnPointerOverUpgradeLevel;
+        buildingUpgradeShop.SpeedUpAction += OnPointerOverUpgradeSpeed;
+    }
+
     void Start()
     {
         SetTooltipTextVisibility(false);
@@ -33,12 +40,13 @@ public class TooltipDisplay : MonoBehaviour
         SetTooltipTextVisibility(true);
         SetCostTextVisibility(true);
 
-        string buildingName = buildingObject.building.buildingType.ToString();
-        int currentLevel = buildingObject.building.level;
+        Building building = buildingObject.building;
+        string buildingName = building.buildingType.ToString();
+        int currentLevel = building.level;
 
         tooltipText.text = $"Upgrade the {buildingName} from Lv. {currentLevel} to Lv. {currentLevel + 1}.";
-        currencyDisplay.sprite = currencySprites[(int)buildingObject.building.costCurrencyType];
-        costText.text = ((int)buildingObject.building.upgradeCosts[UpgradeType.LevelUp]).ToString();
+        currencyDisplay.sprite = currencySprites[(int)building.upgradeCurrencyType];
+        costText.text = building.upgradeCosts[UpgradeType.LevelUp].ToString();
     }
 
     public void OnPointerOverUpgradeSpeed(BuildingObject buildingObject)
@@ -46,12 +54,13 @@ public class TooltipDisplay : MonoBehaviour
         SetTooltipTextVisibility(true);
         SetCostTextVisibility(true);
 
-        string buildingName = buildingObject.building.buildingType.ToString();
-        float currentSpeed = buildingObject.building.speedMultiplier;
+        Building building = buildingObject.building;
+        string buildingName = building.buildingType.ToString();
+        float currentSpeed = building.speedMultiplier;
 
         tooltipText.text = $"Increase the production speed of {buildingName} from {currentSpeed:f1}x to {currentSpeed + 0.1:f1}x.";
-        currencyDisplay.sprite = currencySprites[(int)buildingObject.building.costCurrencyType];
-        costText.text = ((int)buildingObject.building.upgradeCosts[UpgradeType.SpeedUp]).ToString();
+        currencyDisplay.sprite = currencySprites[(int)building.upgradeCurrencyType];
+        costText.text = building.upgradeCosts[UpgradeType.SpeedUp].ToString();
     }
 
     public void OnPointerExit()

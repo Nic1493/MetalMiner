@@ -19,10 +19,10 @@ public class BuildingButton : MonoBehaviour
 
     void Start()
     {
-        UpdateTexts();
+        UpdateTexts(buildingObject);
     }
 
-    void UpdateTexts()
+    void UpdateTexts(BuildingObject buildingObject)
     {
         buildingCostText.text = ((int)buildingObject.building.purchaseCost).ToString();
         buildingCountText.text = $"{buildingObject.building.count}x";

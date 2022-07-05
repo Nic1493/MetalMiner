@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class BuildingPurchaseShop : BuildingShop
 {
-    public event Action PurchaseAction;
+    public event Action<BuildingObject> PurchaseAction;
 
     // enable building buttons based on amount of building types unlocked
     void Start()
@@ -17,7 +17,7 @@ public class BuildingPurchaseShop : BuildingShop
     // called upon pressing building purchase buttons
     public void PurchaseBuilding(BuildingObject buildingObject)
     {
-        CurrencyObject currency = currencyObjects[(int)buildingObject.building.costCurrencyType];
+        CurrencyObject currency = currencyObjects[(int)buildingObject.building.purchaseCurrencyType];
         float purchaseCost = buildingObject.building.purchaseCost;
 
         if (currency.amount >= purchaseCost)
@@ -25,7 +25,7 @@ public class BuildingPurchaseShop : BuildingShop
             currency.amount -= purchaseCost;
             buildingObject.building.count++;
 
-            PurchaseAction?.Invoke();
+            PurchaseAction?.Invoke(buildingObject);
 
             if (buildingObject.building.count == 1)
             {

@@ -45,6 +45,7 @@ public class DataManager : MonoBehaviour
             building.speedMultiplier = userData.buildings[i].speedMultiplier;
             building.purchaseCost = userData.buildings[i].purchaseCost;
             building.upgradeCosts = userData.buildings[i].upgradeCosts;
+            building.initialUpgradeCosts = userData.buildings[i].initialUpgradeCosts;
         }
     }
 

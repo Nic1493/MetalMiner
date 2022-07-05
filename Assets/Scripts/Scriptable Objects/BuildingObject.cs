@@ -17,13 +17,15 @@ public class Building
 
     [Space]
 
-    public CurrencyType costCurrencyType;
+    public CurrencyType purchaseCurrencyType;
     public float purchaseCost;
     public float initialPurchaseCost;
 
     [Space]
 
+    public CurrencyType upgradeCurrencyType;
     public SerializableDictionary<UpgradeType, float> upgradeCosts;
+    public SerializableDictionary<UpgradeType, float> initialUpgradeCosts;
 
     public Building()
     {
@@ -32,11 +34,19 @@ public class Building
         level = 1;
         speedMultiplier = 1f;
 
-        costCurrencyType = CurrencyType.Copper;
+        purchaseCurrencyType = CurrencyType.Copper;
         initialPurchaseCost = 100f;
         purchaseCost = initialPurchaseCost;
 
+        upgradeCurrencyType = CurrencyType.Copper;
+
         upgradeCosts = new SerializableDictionary<UpgradeType, float>
+        {
+            { UpgradeType.LevelUp, 1000f },
+            { UpgradeType.SpeedUp, 500f }
+        };
+
+        initialUpgradeCosts = new SerializableDictionary<UpgradeType, float>
         {
             { UpgradeType.LevelUp, 1000f },
             { UpgradeType.SpeedUp, 500f }

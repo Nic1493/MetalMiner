@@ -17,11 +17,13 @@ MonoBehaviour:
     count: 0
     level: 1
     speedMultiplier: 1
-    costCurrencyType: 1
+    purchaseCurrencyType: 0
     purchaseCost: 100
     initialPurchaseCost: 100
+    upgradeCurrencyType: 2
     upgradeCosts:
-      keys: 0000000001000000
-      values:
-      - 1000
-      - 500
+      keys: 
+      values: []
+    initialUpgradeCosts:
+      keys: 
+      values: []

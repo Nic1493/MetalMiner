@@ -5,46 +5,61 @@ using UnityEngine;
 
 public class BuildingUpgradeShop : BuildingShop
 {
-    public event Action LevelUpAction;
-    public event Action SpeedUpAction;
+    public event Action<BuildingObject> LevelUpAction;
+    public event Action<BuildingObject> SpeedUpAction;
 
     // called upon pressing building upgrade buttons
     public void UpgradeBuildingLevel(BuildingObject buildingObject)
     {
-        CurrencyObject currency = currencyObjects[(int)buildingObject.building.buildingType];
-        float purchaseCost = buildingObject.building.upgradeCosts[UpgradeType.LevelUp];
+        UpgradeType upgradeType = UpgradeType.LevelUp;
+        CurrencyObject currency = currencyObjects[(int)buildingObject.building.upgradeCurrencyType];
+        float purchaseCost = buildingObject.building.upgradeCosts[upgradeType];
 
         if (currency.amount >= purchaseCost)
         {
             currency.amount -= purchaseCost;
 
             buildingObject.building.level++;
-            LevelUpAction?.Invoke();
+            UpdateUpgradeCost(buildingObject, upgradeType);
 
-            UpdateUpgradeCost(buildingObject, UpgradeType.LevelUp);
+            LevelUpAction?.Invoke(buildingObject);
         }
     }
 
     public void UpgradeBuildingSpeed(BuildingObject buildingObject)
     {
-        CurrencyObject currency = currencyObjects[(int)buildingObject.building.buildingType];
-        float purchaseCost = buildingObject.building.upgradeCosts[UpgradeType.SpeedUp];
+        UpgradeType upgradeType = UpgradeType.SpeedUp;
+        CurrencyObject currency = currencyObjects[(int)buildingObject.building.upgradeCurrencyType];
+        float purchaseCost = buildingObject.building.upgradeCosts[upgradeType];
 
         if (currency.amount >= purchaseCost)
         {
             currency.amount -= purchaseCost;
 
             buildingObject.building.speedMultiplier += 0.1f;
-            SpeedUpAction?.Invoke();
+            UpdateUpgradeCost(buildingObject, upgradeType);
 
-            UpdateUpgradeCost(buildingObject, UpgradeType.SpeedUp);
+            SpeedUpAction?.Invoke(buildingObject);
         }
     }
 
     // calculate new upgrade cost
-    // to-do: develop formula
     void UpdateUpgradeCost(BuildingObject buildingObject, UpgradeType upgradeType)
     {
-        // to-do: impl.
+        Building building = buildingObject.building;
+
+        switch (upgradeType)
+        {
+            case UpgradeType.LevelUp:
+                building.upgradeCosts[upgradeType] = building.initialUpgradeCosts[upgradeType] * Mathf.Pow(1.2f, building.level - 1);
+                break;
+
+            case UpgradeType.SpeedUp:
+                building.upgradeCosts[upgradeType] = building.initialUpgradeCosts[upgradeType] * Mathf.Pow(3.6f, building.speedMultiplier - (1f - 0.1f));
+                break;
+
+            default:
+                break;
+        }
     }
 }
