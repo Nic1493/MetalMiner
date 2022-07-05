@@ -12,7 +12,7 @@ public abstract class BuildingShop : MonoBehaviour
 
     protected Button[] buttons;
 
-    protected void Awake()
+    protected virtual void Awake()
     {
         buttons = GetComponentsInChildren<Button>();
     }

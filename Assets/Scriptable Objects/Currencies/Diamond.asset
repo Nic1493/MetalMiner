@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5dae846a4b3048f419535b07a1bd60b5, type: 3}
-  m_Name: '[1] - Copper'
+  m_Name: Diamond
   m_EditorClassIdentifier: 
-  currencyType: 0
+  currencyType: 4
   amount: 0

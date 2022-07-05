@@ -4,6 +4,7 @@ using UnityEngine;
 public class BuildingPurchaseShop : BuildingShop
 {
     public event Action<BuildingObject> PurchaseAction;
+    public event Action<BuildingObject> FirstPurchaseAction;
 
     // enable building buttons based on amount of building types unlocked
     void Start()
@@ -38,6 +39,7 @@ public class BuildingPurchaseShop : BuildingShop
                 }
 
                 userData.buildingTypesUnlocked++;
+                FirstPurchaseAction?.Invoke(buildingObject);
             }
 
             UpdatePurchaseCost(buildingObject);

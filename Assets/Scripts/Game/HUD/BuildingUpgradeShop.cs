@@ -6,6 +6,31 @@ public class BuildingUpgradeShop : BuildingShop
     public event Action<BuildingObject> LevelUpAction;
     public event Action<BuildingObject> SpeedUpAction;
 
+    protected override void Awake()
+    {
+        base.Awake();
+        FindObjectOfType<BuildingPurchaseShop>().FirstPurchaseAction += OnBuildingFirstPurchase;
+    }
+
+    void Start()
+    {
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            buttons[i].interactable = i < Enum.GetNames(typeof(UpgradeType)).Length * userData.buildingTypesUnlocked;
+        }
+    }
+
+    void OnBuildingFirstPurchase(BuildingObject buildingObject)
+    {
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            for (int ii = 0; ii < Enum.GetNames(typeof(UpgradeType)).Length; ii++)
+            {
+                buttons[(int)buildingObject.building.buildingType * 2 + ii].interactable = true;
+            }
+        }
+    }
+
     // called upon pressing building upgrade buttons
     public void UpgradeBuildingLevel(BuildingObject buildingObject)
     {

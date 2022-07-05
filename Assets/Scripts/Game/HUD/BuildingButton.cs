@@ -7,6 +7,7 @@ public class BuildingButton : MonoBehaviour
 
     [Space]
 
+    [SerializeField] TextMeshProUGUI buildingNameText;
     [SerializeField] TextMeshProUGUI buildingCostText;
     [SerializeField] TextMeshProUGUI buildingCountText;
     [SerializeField] TextMeshProUGUI buildingLevelText;
@@ -19,10 +20,11 @@ public class BuildingButton : MonoBehaviour
 
     void Start()
     {
+        buildingNameText.text = buildingObject.name;
         UpdateTexts(buildingObject);
     }
 
-    void UpdateTexts(BuildingObject buildingObject)
+    void UpdateTexts(BuildingObject _)
     {
         buildingCostText.text = ((int)buildingObject.building.purchaseCost).ToString();
         buildingCountText.text = $"{buildingObject.building.count}x";

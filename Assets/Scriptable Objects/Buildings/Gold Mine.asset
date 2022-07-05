@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c77c321e25c3a11469bb85120d974879, type: 3}
-  m_Name: '[5] - Diamond Mine'
+  m_Name: Gold Mine
   m_EditorClassIdentifier: 
   building:
-    buildingType: 4
+    buildingType: 2
     count: 0
     level: 1
     speedMultiplier: 1
     purchaseCurrencyType: 0
     purchaseCost: 100
     initialPurchaseCost: 100
-    upgradeCurrencyType: 4
+    upgradeCurrencyType: 2
     upgradeCosts:
       keys: 
       values: []

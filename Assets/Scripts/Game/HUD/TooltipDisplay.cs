@@ -41,10 +41,9 @@ public class TooltipDisplay : MonoBehaviour
         SetCostTextVisibility(true);
 
         Building building = buildingObject.building;
-        string buildingName = building.buildingType.ToString();
         int currentLevel = building.level;
 
-        tooltipText.text = $"Upgrade the {buildingName} from Lv. {currentLevel} to Lv. {currentLevel + 1}.";
+        tooltipText.text = $"Upgrade the {buildingObject.name} from Lv. {currentLevel} to Lv. {currentLevel + 1}.";
         currencyDisplay.sprite = currencySprites[(int)building.upgradeCurrencyType];
         costText.text = ((int)building.upgradeCosts[UpgradeType.LevelUp]).ToString();
     }
@@ -55,10 +54,9 @@ public class TooltipDisplay : MonoBehaviour
         SetCostTextVisibility(true);
 
         Building building = buildingObject.building;
-        string buildingName = building.buildingType.ToString();
         float currentSpeed = building.speedMultiplier;
 
-        tooltipText.text = $"Increase the production speed of {buildingName} from {currentSpeed:f1}x to {currentSpeed + 0.1:f1}x.";
+        tooltipText.text = $"Increase the production speed of the {buildingObject.name} from {currentSpeed:f1}x to {currentSpeed + 0.1:f1}x.";
         currencyDisplay.sprite = currencySprites[(int)building.upgradeCurrencyType];
         costText.text = ((int)building.upgradeCosts[UpgradeType.SpeedUp]).ToString();
     }

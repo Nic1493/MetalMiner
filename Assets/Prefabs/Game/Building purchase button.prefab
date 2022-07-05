@@ -834,6 +834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingObject: {fileID: 0}
+  buildingNameText: {fileID: 5960485972886976909}
   buildingCostText: {fileID: 2176735783049058478}
   buildingCountText: {fileID: 8172040279617743260}
   buildingLevelText: {fileID: 4366787030807347331}
